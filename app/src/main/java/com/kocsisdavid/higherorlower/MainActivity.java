@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
             makeToast("Higher!");
         }else{
             makeToast("That's right! Try again");
+            guessEditText.setText("");
 
             Random rand = new Random();
             randomNumber = rand.nextInt(20) + 1;
